@@ -1,4 +1,7 @@
 ChoreTracker::Application.routes.draw do
+  resources :tasks
+
+
   resources :chores
 
 
