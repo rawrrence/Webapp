@@ -16,7 +16,7 @@
     <td><%= child.id %></td>
     <td><%= child.first_name %></td>
     <td><%= child.last_name %></td>
-    <td><%= child.active %></td>
+    <td><%= child.active ? "Yes" : "No" %></td>
     <td><%= link_to 'Show', child %></td>
     <td><%= link_to 'Edit', edit_child_path(child) %></td>
     <td><%= link_to 'Destroy', child, method: :delete, data: { confirm: 'Are you sure?' } %></td>

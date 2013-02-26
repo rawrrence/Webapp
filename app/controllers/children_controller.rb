@@ -2,7 +2,7 @@ class ChildrenController < ApplicationController
   # GET /children
   # GET /children.json
   def index
-    @children = Child.all
+    @children = Child.alphabetical
 
     respond_to do |format|
       format.html # index.html.erb

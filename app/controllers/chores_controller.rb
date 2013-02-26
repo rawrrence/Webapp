@@ -2,8 +2,8 @@ class ChoresController < ApplicationController
   # GET /chores
   # GET /chores.json
   def index
-    @chores = Chore.all
-
+    @chores = Chore.chronological.by_task.all
+	
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @chores }
