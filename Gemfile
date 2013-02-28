@@ -4,6 +4,7 @@ gem 'rails', '3.2.12'
 gem 'jquery-rails'
 gem 'validates_timeliness'
 gem "bcrypt-ruby", :require => "bcrypt"
+gem 'thin'
 
 # Gems used only in testing
 group :test do
@@ -18,7 +19,6 @@ end
 # Gems used only in development
 group :development do
 gem 'quiet_assets'
-gem 'thin'
 gem 'better_errors'
 gem 'binding_of_caller'
 gem 'meta_request'
